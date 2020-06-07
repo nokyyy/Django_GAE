@@ -1,0 +1,10 @@
+runtime: python37
+# エントリーポイント
+entrypoint: gunicorn -b :$PORT blogproject.wsgi:application
+  
+
+handlers:
+- url: /static
+  static_dir: static/
+- url: .*
+  script: auto

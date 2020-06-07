@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="margin">
+  <a class="btn btn-default slide" href="{% url 'articles.list' %}"><i class="fa fa-caret-left"></i> 前ページへ戻る </a>
+  <h1>記事作成</h1>
+  <form action="" method="Post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <!--formのfieldを全て表示する時に改行して表示する-->
+      <input id="register" type="submit" value="保存">
+  </form>
+  </div>
+{% endblock content %}

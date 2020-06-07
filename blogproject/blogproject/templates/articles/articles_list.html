@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="margin">
+  <a class="btn btn-default slide" href="{% url 'top' %}"><i class="fa fa-caret-left"></i> ホームへ戻る </a>
+  <h1>記事一覧</h1>
+  <a class="btn btn-default slide" href="{% url 'articles.create' %}">ブログ作成する  <i class="fa fa-caret-right"></i></a>
+{% for article in object_list %}
+  <div class="article">
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.detail }}</p>
+  </div>
+{% endfor %}
+</div>
+{% endblock content %}

@@ -7,7 +7,7 @@ PythonのDjangoを使って、
 
 DBは mysql を使用しました
 
-Google App Engineにデプロイしました<br>
+サイトURL<br>
 https://blpgapp.an.r.appspot.com/
 
 # Requirement

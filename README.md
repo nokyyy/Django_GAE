@@ -1,13 +1,13 @@
 # Django_GAE
  
 # Features
-
+GAEを使用してみたかったので試しで簡易でwebアプリを作りデプロイしました。<br>
 PythonのDjangoを使って、
 ホームのページ/ ブログ一覧のページ/ ブログ作成のページ/ admin の４つでできています
 
 DBは mysql を使用しました
 
-Google App Engineにデプロイしました
+Google App Engineにデプロイしました<br>
 https://blpgapp.an.r.appspot.com/
 
 # Requirement
